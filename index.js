@@ -1,27 +1,3 @@
-// const button = document.getElementById("btn")
-// button.style.backgroundColor = "black"
-// button.style.color = "white"
-// button.style.fontSize = "1em"
-// const body = document.getElementsByTagName("body")[0];
-// const themeImg = document.getElementById("theme-img")
-
-// document.getElementById('btn').addEventListener('click', function () {
-//     if (button.style.backgroundColor === "black") {
-//         // button.innerText = "Night"
-//         button.style.backgroundColor = "white";
-//         button.style.color = "black";
-//         body.style.backgroundColor = "black";
-//         themeImg.src = "./assets/moon.png"
-
-//     } else {
-//         // button.innerText = "Day"
-//         button.style.backgroundColor = "black";
-//         button.style.color = "white";
-//         body.style.backgroundColor = "white";
-//         themeImg.src = "./assets/sun.png"
-
-//     }
-// })
 
 const button = document.getElementById("btn");
 button.style.backgroundColor = "black";
@@ -29,19 +5,21 @@ button.style.color = "white";
 button.style.fontSize = "1em";
 
 const body = document.getElementById("body");
-const themeImg = document.getElementById("theme-img"); 
+const themeIcon = document.getElementById("theme-icon")
 
 document.getElementById('btn').addEventListener('click', function () {
     if (button.style.backgroundColor === "black") {
         button.style.backgroundColor = "white";
         button.style.color = "black";
         body.style.backgroundColor = "black";
-        themeImg.src = "./assets/sun25.png";
+        themeIcon.className = "fa-solid fa-sun fa-xl fa-beat-fade"
+        themeIcon.style.color = "#FFD500"
     } else {
         button.style.backgroundColor = "black";
         button.style.color = "white";
         body.style.backgroundColor = "white";
-        themeImg.src = "./assets/moon.png";
+        themeIcon.className = "fa-solid fa-moon fa-xl fa-beat-fade "
+        themeIcon.style.color = "white"
     }
 });
 
